@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+nav {
+  background-color: #2f1336;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  z-index: 1;
+}
+
+.nav-logo {
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: beige;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    background-color: #2f1336;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.75s ease;
+    transition: -webkit-transform 0.75s ease;
+    transition: transform 0.75s ease;
+    transition: transform 0.75s ease, -webkit-transform 0.75s ease;
+    z-index: 1;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes nav-links-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes nav-links-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3 {
+  color: white;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.main {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90vh;
+}
+
+.main h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.grid-container {
+  margin: 100px;
+  margin-top: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  justify-items: center;
+}
+
+.fullstack-projects {
+  justify-items: flex-end;
+}
+
+.misc-projects {
+  justify-items: flex-end;
+}
+
+.backend-projects {
+  justify-items: flex-end;
+}
+
+.frontend-projects {
+  justify-items: flex-end;
+}
+
+.project-types {
+  width: 100vw;
+  text-align: center;
+}
+
+.project-types h2 {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+img {
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 100px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import "./nav";
+@import "./variables";
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.main h1 {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    transform: translate(0%, 40%)
+}
+
+@media screen and (max-width: 1000px) {
+    .main h1 {
+        height: 90vh;
+        transform: translate(0%, 40%)
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main h1 {
+        height: 70vh;
+        transform: translate(0%, 40%)
+    }
+}

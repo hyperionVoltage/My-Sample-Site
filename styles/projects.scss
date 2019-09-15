@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import "./nav";
+@import "./variables";
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: white;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.main {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90vh;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.grid-container {
+  margin: 100px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+
+.fullstack-projects {
+  justify-items: flex-end;
+}
+
+.misc-projects {
+  justify-items: flex-end;
+}
+
+.backend-projects {
+  justify-items: flex-end;
+}
+
+.frontend-projects {
+  justify-items: flex-end;
+}
+
+.project-types {
+  width: 100vw;
+  text-align: center;
+
+  h2 {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+img {
+  width: 600px;
+  height: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    width: 100px;
+    height: 50px;
+  }
+}

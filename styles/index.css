@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+nav {
+  background-color: #2f1336;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  z-index: 1;
+}
+
+.nav-logo {
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: beige;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    height: 92vh;
+    background-color: #2f1336;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.75s ease;
+    transition: -webkit-transform 0.75s ease;
+    transition: transform 0.75s ease;
+    transition: transform 0.75s ease, -webkit-transform 0.75s ease;
+    z-index: 1;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes nav-links-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes nav-links-fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: line-fill 1s ease forwards 4s;
+          animation: line-fill 1s ease forwards 4s;
+}
+
+#logo path {
+  stroke-dasharray: 1453px;
+  stroke-dashoffset: 1453px;
+  -webkit-animation: line-anime 4s ease forwards;
+          animation: line-anime 4s ease forwards;
+}
+
+@-webkit-keyframes line-anime {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes line-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes line-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+#confetti-frame {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #logo {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #logo {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #logo {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo {
+    width: 150px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

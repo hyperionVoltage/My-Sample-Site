@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import "./nav";
+@import "./variables";
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#pdf {
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
