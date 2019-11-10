@@ -33,26 +33,11 @@ body {
 
 .grid-container {
   margin: 100px;
-  margin-top: 0px;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: center;
-}
-
-.fullstack-projects {
-  justify-items: flex-end;
-}
-
-.misc-projects {
-  justify-items: flex-end;
-}
-
-.backend-projects {
-  justify-items: flex-end;
-}
-
-.frontend-projects {
-  justify-items: flex-end;
+  margin-top: 0;
+  
+  div {
+    margin-bottom: 100px;
+  }
 }
 
 .project-types {

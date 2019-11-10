@@ -178,28 +178,11 @@ body {
 
 .grid-container {
   margin: 100px;
-  margin-top: 0px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  justify-items: center;
+  margin-top: 0;
 }
 
-.fullstack-projects {
-  justify-items: flex-end;
-}
-
-.misc-projects {
-  justify-items: flex-end;
-}
-
-.backend-projects {
-  justify-items: flex-end;
-}
-
-.frontend-projects {
-  justify-items: flex-end;
+.grid-container div {
+  margin-bottom: 100px;
 }
 
 .project-types {
